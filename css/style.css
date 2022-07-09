@@ -41,7 +41,7 @@ html{
    margin: 0 auto;
    padding-left: 15px;
    padding-right: 15px;
-   outline: 1px solid tomato;
+   /* outline: 1px solid tomato; */
    
 }
 
@@ -49,11 +49,11 @@ html{
    display: none;
 }
 
-.section{
+section{
    padding: 90px 0;
 }
 
-.body{
+body{
    
    font-family: 'Raleway', sans-serif;
    background-color: var(--background-color);
@@ -61,16 +61,31 @@ html{
    letter-spacing: 0.05em;
    font-weight: 400;
 
-
+}
+main{
+   margin-top: 120px;
 }
 
 
   
 /* Header */
+.header-section{
+   position: fixed;
+   top: 0;
+   left:0;
+   width: 100%;
+   background-color: var(--background-color);
+   padding: 24px 0; 
+   z-index: 1;
+  
+}
 .header{
+
    display: flex;
    align-items: center;
    justify-content: space-between;
+
+
 }
 .main-nav{
    
@@ -120,13 +135,12 @@ html{
 .sub-menu{
    position: absolute;
    left: 0;
-   top: 100%;
+   top: 32px;
    width: 100%;
    display:none;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
-  
 }
 
 /* Список випадаючого меню */
@@ -147,25 +161,24 @@ html{
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.05em;
+   
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+   text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+.sub-item{
+   padding: 6px 16px;
+   width: 100%;
 }
 
-/* .sub-item + .sub-item{
-   margin-bottom: 6px;
-} */
 
-.sub-item {
-   padding: 9px 14px;
-}
-
-.sub-item:not(:last-child){
-   margin-bottom: 6px;
-}
 .sub-menu-link:hover,
 .sub-menu-link:focus{
    color: var(--accent-color);
    text-decoration:underline;
    
 }
+
 
 
 /* Hero */
@@ -314,13 +327,28 @@ text-decoration:underline;
 
 
 .apartments-item{
+   position: relative;
    flex-basis: 50%;
-   padding: 15px;
+   padding: 16px;
   
+}
+.apartments-item::before{
+   position: absolute;
+   content: "";
+   top: 16px;
+   right: 16px;
+   bottom: 16px;
+   left: 16px;
+
+   background-image: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242B33 100%);
 }
 
 
+
 .apartment-text{
+   position: absolute;
+   bottom: 40px;
+   left: 48px;
    display: block;
    font-size: 1.5rem;
    line-height: 1.16; 
@@ -383,9 +411,7 @@ thead,tfoot{
    font-size: 1rem;
    line-height: 1.5; 
 }
-.image{
-   text-align: center;
-}
+
 
 /* .button-primery:hover,:focus{
    background-color: aqua;
@@ -410,6 +436,19 @@ thead,tfoot{
   
 }
 
+/* Video */
+
+.video-image{
+   position: relative;
+   text-align: center;
+}
+
+.play-svg{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transition: transform(-50%, -50%);
+}
 /* quesion */
 
 .text-quesion{

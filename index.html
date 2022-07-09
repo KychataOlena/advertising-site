@@ -15,7 +15,7 @@ rel="stylesheet">
 </head>
 <body class="body">
 
-<header>
+<header class="header-section">
    <div class="container header">
       <a href="./index.html">
          <img src="./img/first-screen__logo.svg"width="165" alt="лого компанії Хаусвоп">
@@ -24,12 +24,17 @@ rel="stylesheet">
          <ul class="site-nav ul">
             <li class="site-nav-item"><a href="#" class="site-nav-link">Про комплекс</a></li>
             <li class="site-nav-item"><a href="#" class="site-nav-link">Район</a></li>
-            <li class="site-nav-item"><a href="#" class="site-nav-link">Каталог квартир</a>
+            <li class="site-nav-item link-icon"><a href="#" class="site-nav-link">
+               <!-- <svg class="address-svg" width="24" height="24" aria-hidden="true">
+                  <use href="./img/symbol-sprite.svg#icon-placeholder">
+                  </use>
+               </svg> -->
+               Каталог квартир</a>
                <ul class="sub-menu ul">
-                  <li class="sub-item"><a href=""class="sub-menu-link">Стандарт</a></li>
-                  <li class="sub-item"><a href=""class="sub-menu-link">Комфорт</a></li>
-                  <li class="sub-item"><a href=""class="sub-menu-link">Люкс</a></li>
-                  <li class="sub-item"><a href="" class="sub-menu-link">Супер Люкс</a></li>
+                  <li><a href=""class="sub-item sub-menu-link">Стандарт</a></li>
+                  <li><a href=""class="sub-item sub-menu-link">Комфорт</a></li>
+                  <li><a href=""class="sub-item sub-menu-link">Люкс</a></li>
+                  <li><a href="" class="sub-item sub-menu-link">Супер Люкс</a></li>
                </ul>
             </li>
             <li class="site-nav-item"><a href="#" class="site-nav-link">Іпотека</a></li>
@@ -212,10 +217,14 @@ rel="stylesheet">
       <!-- Video -->
       <section>
         
-         <div class="container image">
-            <img src="" alt="програвач" width="100">
+         <div class="container video-image">
+            <svg class="play-svg" width="100" height="100" aria-hidden="true">
+               <use href="./img/symbol-sprite.svg#play-button">
+               </use>
+            </svg>
+          
             <img src="./img/livingroom.jpg" alt="квартира" width="719">
-           </div>
+         </div>
       </section>
 
       <!-- maps -->
