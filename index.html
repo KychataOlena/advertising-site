@@ -30,12 +30,15 @@ rel="stylesheet">
                   </use>
                </svg> -->
                Каталог квартир</a>
-               <ul class="sub-menu ul">
-                  <li><a href=""class="sub-item sub-menu-link">Стандарт</a></li>
-                  <li><a href=""class="sub-item sub-menu-link">Комфорт</a></li>
-                  <li><a href=""class="sub-item sub-menu-link">Люкс</a></li>
-                  <li><a href="" class="sub-item sub-menu-link">Супер Люкс</a></li>
-               </ul>
+               <div class="sub-menu">
+                  <ul class="sub-menu-list ul">
+                     <li><a href=""class="sub-item sub-menu-link">Стандарт</a></li>
+                     <li><a href=""class="sub-item sub-menu-link">Комфорт</a></li>
+                     <li><a href=""class="sub-item sub-menu-link">Люкс</a></li>
+                     <li><a href="" class="sub-item sub-menu-link">Супер Люкс</a></li>
+                  </ul>
+               </div>
+              
             </li>
             <li class="site-nav-item"><a href="#" class="site-nav-link">Іпотека</a></li>
             <li class="site-nav-item"><a href="#" class="site-nav-link">Контакти</a></li>
@@ -52,7 +55,7 @@ rel="stylesheet">
       <section class="hero section">
          <div class="container">
             <h1 class="main-title">Житловий комплекс в історичному центрі</h1>
-            <a href="#feauter section" class="scroll">
+            <a href="#feauter section" class="hero-section-mouse">
                <svg aria-label="Перехід на іншу сторінку" width="40" height="40" class="hero-icon">
                   <use href="./img/symbol-sprite.svg#icon-mouse" >
                   </use>
@@ -118,26 +121,55 @@ rel="stylesheet">
          <div class="container">
             <h2 class="title ul">Наші квартири</h2>
             <ul class="apartments-list ul">
-               <li class="apartments-item">
+               <li class="apartments-item-wrap">
+                  <div class="apartments-item">
+                     <img class="apartments-list-img" src="./img/kitchen.jpg" width="535" alt="кімната">
+                     <p class="apartment-text">Стандарт — 1 поверх</p>
+                     <div class="flat-section-overlay">
+                        <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
+                           Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
+                        </p>
+                     </div>
+                  </div>
+                 
+               </li>
+               <li class="apartments-item-wrap">
+                  <div class="apartments-item">
+                     <img class="apartments-list-img" src="./img/room.jpg" width="535" alt="кімната">
+                     <p class="apartment-text">Комфорт — 2 поверхи</p>
+                     <div class="flat-section-overlay">
+                        <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
+                           Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
+                        </p>
+                     </div>
+                  </div>
+                 
+               </li>
+               <li class="apartments-item-wrap">
+                 <div class="apartments-item">
                   <img class="apartments-list-img" src="./img/kitchen.jpg" width="535" alt="кімната">
-                  <p class="apartment-text">Стандарт — 1 поверх</p>
-                  <div class="backgraund-overlay">
+                  <p class="apartment-text">Люкс — 3 поверхи</p>
+                  <div class="flat-section-overlay">
                      <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                         Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                      </p>
                   </div>
+
+                 </div>
+                
                </li>
-               <li class="apartments-item">
-                  <img class="apartments-list-img" src="./img/room.jpg" width="535" alt="кімната">
-                  <p class="apartment-text">Комфорт — 2 поверхи</p>
-               </li>
-               <li class="apartments-item">
-                  <img class="apartments-list-img" src="./img/kitchen.jpg" width="535" alt="кімната">
-                  <p class="apartment-text">Люкс — 3 поверхи</p>
-               </li>
-               <li class="apartments-item">
-                  <img class="apartments-list-img" src="./img/room.jpg" width="535" alt="кімната">
-                  <p class="apartment-text">Супер Люкс — 4 поверхи</p>
+               <li class="apartments-item-wrap">
+                  <div class="apartments-item">
+                     <img class="apartments-list-img" src="./img/room.jpg" width="535" alt="кімната">
+                     <p class="apartment-text">Супер Люкс — 4 поверхи</p>
+                     <div class="flat-section-overlay">
+                        <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
+                           Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
+                        </p>
+                     </div>
+
+                  </div>
+                 
                </li>
                
             </ul>
@@ -206,7 +238,7 @@ rel="stylesheet">
                Якщо у когось є ідея - завжди велкам!
 
             </p>
-            <button type="button" class="button-primery">Подивитись район</button>
+            <button type="button" data-modal-open class="button-primery">Подивитись район</button>
             <ul class="ul">
                <li class="proposition-txt">Введіть ім’я *</li>
                <li class="proposition-txt">Введіть e-mail *</li>
@@ -330,5 +362,13 @@ rel="stylesheet">
       </div>
       
    </footer>
+
+   <!-- Modal -->
+ <div class="backdrop is-hidden" data-modal>
+   <div class="modal">
+      <button class="modal-close-button" type="button" data-modal-close>X</button>
+   </div>
+ </div>
+ <script src="./js/modal.js"></script>
 </body>
 </html>
