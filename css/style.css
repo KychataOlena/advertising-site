@@ -355,6 +355,21 @@ text-decoration:underline;
    margin-top: 1.5rem;
    margin-bottom: 0;
 }
+.backgraund-overlay{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.overlay{
+   
+   
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 1.16;
+   background-color: #242B33;
+   padding: 24px 32px;
+}
 
 /* <!-- Price --> */
 
@@ -445,9 +460,9 @@ thead,tfoot{
 
 .play-svg{
    position: absolute;
-   left: 50%;
    top: 50%;
-   transition: transform(-50%, -50%);
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 /* quesion */
 
