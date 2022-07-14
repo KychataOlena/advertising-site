@@ -364,10 +364,68 @@ rel="stylesheet">
    </footer>
 
    <!-- Modal -->
- <div class="backdrop is-hidden" data-modal>
+ <div class="backdrop " data-modal>
    <div class="modal">
       <button class="modal-close-button" type="button" data-modal-close>X</button>
+      <div class="modal-inner">
+         <h2 class="title title-form">Хочете подивитися?</h2>
+         <form class="form" name="main-form" novalidate autocomplete="on">
+            <h3 class="title-info">Контактна інформація</h3>
+            <div class="form-field">
+               <label class="form-label" for="user-name">Введіть ім’я *</label>
+               <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Іван">
+            </div>
+            <div class="form-field">
+               <label class="form-label" for="user-mail">Введіть e-mail *</label>
+               <input class="form-input" type="email" id="user-mail" name="user-mail" placeholder="example@mail.com">
+            </div>
+            <div class="form-field">
+               <label class="form-label"  for="user-phone">Введіть телефон *</label>
+               <input class="form-input" type="tel" id="user-phone" name="user-phone" placeholder="099 122 22 21">
+            </div>
+            <div class="form-field">
+               <label class="form-label" for="user-password">Введіть пароль *</label>
+               <input class="form-input" type="password" id="user-password" name="user-password" placeholder="*****">
+            </div>
+            <h3 class="title-info">Інформація про квартиру</h3>
+            <div class="form-field">
+               <label class="form-label" for="flat-type">Оберіть тип квартири *</label>
+               <select class="form-input" name="flat-type" id="flat-type">
+                  <option value="1">Стандарт — 1 поверх</option>
+                  <option value="2">Комфорт — 2 поверхи</option>
+                  <option value="3" selected>Люкс — 3 поверхи</option>
+                  <option value="4">Супер Люкс — 4 поверхи</option>
+               </select>
+            </div>
+            <div class="form-field">
+               <label class="form-label" for="flat-location">Наскільки вам зручне містознаходження?</label>
+               <input class="form-range" type="range" id="flat-location" name="flat-location" min="1" max="10" value="9">
+            </div>
+            <div class="form-field">
+               <label class="form-label" for="flat-term">На який термін плануєте купувати житло?
+                  (від 1 до 100 років)</label>
+               <input class="form-input" type="number" id="flat-term" name="flat-term" min="1" max="10" value="9">
+            </div>
+            <div class="form-field">
+               <label class="form-label" for="date-time">Оберіть дату і час перегляду квартири *</label>
+               <input class="form-input" type="datetime-local" id="date-time" name="date-time">
+            </div>
+            <h3 class="title-info">Додаткова інформація</h3>
+            <div class="form-field">
+               <label class="form-label" for="form-comment">Введіть коментар </label>
+               <textarea class="form-input form-textarea" name="form-comment" id="form-comment"rows="10" placeholder="Моє побажання..."></textarea>
+            </div>
+            <div class="form-field">
+               <input class="" type="checkbox" id="checkbox-form" name="checkbox-form">
+               <label class="" for="checkbox-form">Я згоден з правами використання введених особистих даних.</label>
+            </div>
+            <button class="form-button form-button-checkbox" type="submit">Подивитись район</button>
+            <p class="text-form"><i>Ми нікому не передаємо ваші дані. І не зберігаємо ваш номер у базу.</i></p>
+         </form>
+      </div>
    </div>
+
+   
  </div>
  <script src="./js/modal.js"></script>
 </body>
