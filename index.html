@@ -16,32 +16,32 @@ rel="stylesheet">
 <body class="body">
 
 <header class="header-section">
-   <div class="container header">
+   <div class="container header__inner">
       <a href="./index.html">
          <img src="./img/first-screen__logo.svg"width="165" alt="лого компанії Хаусвоп">
       </a>
-      <nav class="main-nav">
-         <ul class="site-nav ul">
-            <li class="site-nav-item"><a href="#" class="site-nav-link">Про комплекс</a></li>
-            <li class="site-nav-item"><a href="#" class="site-nav-link">Район</a></li>
-            <li class="site-nav-item link-icon"><a href="#" class="site-nav-link">
+      <nav class="menu">
+         <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="link">Про комплекс</a></li>
+            <li class="menu__item"><a href="#" class="link">Район</a></li>
+            <li class="menu__item"><a href="#" class="link">
                <!-- <svg class="address-svg" width="24" height="24" aria-hidden="true">
                   <use href="./img/symbol-sprite.svg#icon-placeholder">
                   </use>
                </svg> -->
                Каталог квартир</a>
                <div class="sub-menu">
-                  <ul class="sub-menu-list ul">
-                     <li><a href=""class="sub-item sub-menu-link">Стандарт</a></li>
-                     <li><a href=""class="sub-item sub-menu-link">Комфорт</a></li>
-                     <li><a href=""class="sub-item sub-menu-link">Люкс</a></li>
-                     <li><a href="" class="sub-item sub-menu-link">Супер Люкс</a></li>
+                  <ul class="sub-menu__list">
+                     <li><a href=""class="sub-menu__item link">Стандарт</a></li>
+                     <li><a href=""class="sub-menu__item link">Комфорт</a></li>
+                     <li><a href=""class="sub-menu__item link">Люкс</a></li>
+                     <li><a href="" class="sub-menu__item link">Супер Люкс</a></li>
                   </ul>
                </div>
               
             </li>
-            <li class="site-nav-item"><a href="#" class="site-nav-link">Іпотека</a></li>
-            <li class="site-nav-item"><a href="#" class="site-nav-link">Контакти</a></li>
+            <li class="menu__item"><a href="#" class="link">Іпотека</a></li>
+            <li class="menu__item"><a href="#" class="link">Контакти</a></li>
          </ul>
       </nav>
 
@@ -50,7 +50,7 @@ rel="stylesheet">
 
 
 
-   <main>
+<main>
       <!-- Hero -->
       <section class="hero section">
          <div class="container">
@@ -117,15 +117,15 @@ rel="stylesheet">
       </section>
 
       <!-- Appartments -->
-      <section class="section">
+      <section class="apartment-section section">
          <div class="container">
-            <h2 class="title ul">Наші квартири</h2>
-            <ul class="apartments-list ul">
+            <h2 class="title ">Наші квартири</h2>
+            <ul class="apartments-list">
                <li class="apartments-item-wrap">
                   <div class="apartments-item">
-                     <img class="apartments-list-img" src="./img/kitchen.jpg" width="535" alt="кімната">
-                     <p class="apartment-text">Стандарт — 1 поверх</p>
-                     <div class="flat-section-overlay">
+                     <img class="apartments-item__img" src="./img/kitchen.jpg" width="535" alt="кімната">
+                     <p class="apartment-item__text">Стандарт — 1 поверх</p>
+                     <div class="flat-item__overlay">
                         <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                            Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                         </p>
@@ -135,9 +135,9 @@ rel="stylesheet">
                </li>
                <li class="apartments-item-wrap">
                   <div class="apartments-item">
-                     <img class="apartments-list-img" src="./img/room.jpg" width="535" alt="кімната">
-                     <p class="apartment-text">Комфорт — 2 поверхи</p>
-                     <div class="flat-section-overlay">
+                     <img class="apartments-item__img" src="./img/room.jpg" width="535" alt="кімната">
+                     <p class="apartment-item__text">Комфорт — 2 поверхи</p>
+                     <div class="flat-item__overlay">
                         <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                            Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                         </p>
@@ -147,9 +147,9 @@ rel="stylesheet">
                </li>
                <li class="apartments-item-wrap">
                  <div class="apartments-item">
-                  <img class="apartments-list-img" src="./img/kitchen.jpg" width="535" alt="кімната">
-                  <p class="apartment-text">Люкс — 3 поверхи</p>
-                  <div class="flat-section-overlay">
+                  <img class="apartments-item__img" src="./img/kitchen.jpg" width="535" alt="кімната">
+                  <p class="apartment-item__text">Люкс — 3 поверхи</p>
+                  <div class="flat-item__overlay">
                      <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                         Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                      </p>
@@ -160,9 +160,9 @@ rel="stylesheet">
                </li>
                <li class="apartments-item-wrap">
                   <div class="apartments-item">
-                     <img class="apartments-list-img" src="./img/room.jpg" width="535" alt="кімната">
-                     <p class="apartment-text">Супер Люкс — 4 поверхи</p>
-                     <div class="flat-section-overlay">
+                     <img class="apartments-item__img" src="./img/room.jpg" width="535" alt="кімната">
+                     <p class="apartment-item__text">Супер Люкс — 4 поверхи</p>
+                     <div class="flat-item__overlay">
                         <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                            Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                         </p>
@@ -364,7 +364,7 @@ rel="stylesheet">
    </footer>
 
    <!-- Modal -->
- <div class="backdrop " data-modal>
+ <div class="backdrop is-hidden" data-modal>
    <div class="modal">
       <button class="modal-close-button" type="button" data-modal-close>X</button>
       <div class="modal-inner">
