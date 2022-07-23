@@ -1,0 +1,34 @@
+
+.prices-table{
+   width: 100%;
+   border-collapse: collapse;
+   
+    &__caption{
+    text-align: left;
+   margin-bottom: 22px;
+   font-size: 24px;
+   line-height: 1.16;
+}
+    &__title{
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.16; 
+}
+    &__text{
+   font-size: 24px;
+   line-height: 1.16; 
+}
+}
+
+
+thead,tfoot{
+   background-color: var(--background-color-table);
+}
+
+td, th{
+   padding: 8px 16px;
+   border: 1px solid var(--text-color);
+   text-align: center;
+   text-align: left;
+}
+

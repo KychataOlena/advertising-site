@@ -10,13 +10,13 @@
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap" 
 rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/main.min.css">
   
 </head>
 <body class="body">
 
 <header class="header-section">
-   <div class="container header__inner">
+   <div class="container header-section__inner">
       <a href="./index.html">
          <img src="./img/first-screen__logo.svg"width="165" alt="лого компанії Хаусвоп">
       </a>
@@ -25,10 +25,6 @@ rel="stylesheet">
             <li class="menu__item"><a href="#" class="link">Про комплекс</a></li>
             <li class="menu__item"><a href="#" class="link">Район</a></li>
             <li class="menu__item"><a href="#" class="link">
-               <!-- <svg class="address-svg" width="24" height="24" aria-hidden="true">
-                  <use href="./img/symbol-sprite.svg#icon-placeholder">
-                  </use>
-               </svg> -->
                Каталог квартир</a>
                <div class="sub-menu">
                   <ul class="sub-menu__list">
@@ -55,22 +51,22 @@ rel="stylesheet">
       <section class="hero section">
          <div class="container">
             <h1 class="main-title">Житловий комплекс в історичному центрі</h1>
-            <a href="#feauter section" class="hero-section-mouse">
-               <svg aria-label="Перехід на іншу сторінку" width="40" height="40" class="hero-icon">
+            <a href="#feauter section" class="hero__mouse">
+               <svg aria-label="Перехід на іншу сторінку" width="40" height="40" class="hero__icon">
                   <use href="./img/symbol-sprite.svg#icon-mouse" >
                   </use>
                </svg>
             </a>
-            <address class="adress-hero">
-               <a href="" class="address-link">
-                  <svg class="address-svg" width="24" height="24" aria-hidden="true">
+            <address class="address">
+               <a href="" class="link address__link">
+                  <svg class="address__svg" width="24" height="24" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-placeholder">
                      </use>
                   </svg>
                   вул. Садова 10-15
                </a>
-               <a href="telto:+380991234567" class="address-link" >
-                  <svg class="address-svg" width="24" height="24" aria-hidden="true">
+               <a href="telto:+380991234567" class="link address__link" >
+                  <svg class="address__svg" width="24" height="24" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-phone-call">
                      </use>
                   </svg>
@@ -81,51 +77,51 @@ rel="stylesheet">
        
       </section>
 
-      <!-- Feauter -->
-      <section id="feauter section">
+      <!-- Feauteres -->
+      <section id="features section">
          <div class="container">
-            <h2 class="title block">Feature section</h2>
-            <ul class="feauter-menu ul">
-               <li class="feauter-link">
-                  <svg class="feauter-link-svg" width="80" height="80" aria-hidden="true">
+            <h2 class="title visually-hidden">Feature section</h2>
+            <ul class="features__menu">
+               <li class="features__item">
+                  <svg class="features__icon" width="80" height="80" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-bench">
                      </use>
                   </svg>
-                  <p class="feauter-text">Поряд історичні парки та сквери</p></li>
-               <li class="feauter-link">
-                  <svg class="feauter-link-svg" width="80" height="80" aria-hidden="true">
+                  <p class="features__text">Поряд історичні парки та сквери</p></li>
+               <li class="features__item">
+                  <svg class="features__icon" width="80" height="80" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-building">
                      </use>
                   </svg>
-                  <p class="feauter-text">Повністю облаштований</p></li>
-               <li class="feauter-link">
-                  <svg class="feauter-link-svg" width="80" height="80" aria-hidden="true">
+                  <p class="features__text">Повністю облаштований</p></li>
+               <li class="features__item">
+                  <svg class="features__icon" width="80" height="80" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-fountain">
                      </use>
                   </svg>
-                  <p class="feauter-text">10 фонтанів на території</p></li>
-               <li class="feauter-link">
-                  <svg class="feauter-link-svg" width="80" height="80" aria-hidden="true">
+                  <p class="features__text">10 фонтанів на території</p></li>
+               <li class="features__item">
+                  <svg class="features__icon" width="80" height="80" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-bicycle">
                      </use>
                   </svg>
-                  <p class="feauter-text">6 км велодоріжок</p></li>
+                  <p class="features__text">6 км велодоріжок</p></li>
             </ul>
 
          </div>
         
       </section>
 
-      <!-- Appartments -->
+      <!-- Apartments -->
       <section class="apartment-section section">
          <div class="container">
-            <h2 class="title ">Наші квартири</h2>
-            <ul class="apartments-list">
-               <li class="apartments-item-wrap">
-                  <div class="apartments-item">
-                     <img class="apartments-item__img" src="./img/kitchen.jpg" width="535" alt="кімната">
-                     <p class="apartment-item__text">Стандарт — 1 поверх</p>
-                     <div class="flat-item__overlay">
+            <h2 class="title">Наші квартири</h2>
+            <ul class="apartment-section__list">
+               <li class="apartment-section__item-wrap">
+                  <div class="apartment-section__item">
+                     <img class="apartment-section__img" src="./img/kitchen.jpg" width="535" alt="кімната">
+                     <p class="apartment-section__text">Стандарт — 1 поверх</p>
+                     <div class="apartment-section__overlay">
                         <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                            Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                         </p>
@@ -133,11 +129,11 @@ rel="stylesheet">
                   </div>
                  
                </li>
-               <li class="apartments-item-wrap">
-                  <div class="apartments-item">
-                     <img class="apartments-item__img" src="./img/room.jpg" width="535" alt="кімната">
-                     <p class="apartment-item__text">Комфорт — 2 поверхи</p>
-                     <div class="flat-item__overlay">
+               <li class="apartment-section__item-wrap">
+                  <div class="apartment-section__item">
+                     <img class="apartment-section__img" src="./img/room.jpg" width="535" alt="кімната">
+                     <p class="apartment-section__text">Комфорт — 2 поверхи</p>
+                     <div class="apartment-section__overlay">
                         <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                            Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                         </p>
@@ -145,11 +141,11 @@ rel="stylesheet">
                   </div>
                  
                </li>
-               <li class="apartments-item-wrap">
-                 <div class="apartments-item">
-                  <img class="apartments-item__img" src="./img/kitchen.jpg" width="535" alt="кімната">
-                  <p class="apartment-item__text">Люкс — 3 поверхи</p>
-                  <div class="flat-item__overlay">
+               <li class="apartment-section__item-wrap">
+                 <div class="apartment-section__item">
+                  <img class="apartment-section__img" src="./img/kitchen.jpg" width="535" alt="кімната">
+                  <p class="apartment-section__text">Люкс — 3 поверхи</p>
+                  <div class="apartment-section__overlay">
                      <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                         Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                      </p>
@@ -158,11 +154,11 @@ rel="stylesheet">
                  </div>
                 
                </li>
-               <li class="apartments-item-wrap">
-                  <div class="apartments-item">
-                     <img class="apartments-item__img" src="./img/room.jpg" width="535" alt="кімната">
-                     <p class="apartment-item__text">Супер Люкс — 4 поверхи</p>
-                     <div class="flat-item__overlay">
+               <li class="apartment-section__item-wrap">
+                  <div class="apartment-section__item">
+                     <img class="apartment-section__img" src="./img/room.jpg" width="535" alt="кімната">
+                     <p class="apartment-section__text">Супер Люкс — 4 поверхи</p>
+                     <div class="apartment-section__overlay">
                         <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі знатурального дерева.
                            Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
                         </p>
@@ -183,38 +179,38 @@ rel="stylesheet">
          <div class="container">
             <h2 class="title">Ціни</h2>
             <table class="prices-table">
-             <caption class="caption">Каталог типів квартир за ціною</caption>
+             <caption class="prices-table__caption">Каталог типів квартир за ціною</caption>
              <thead>
-                <tr class="table-title">
+                <tr class="prices-table__title">
                    <th>Квартира</th>
                    <th>Поверховість</th>
                    <th>Ціна</th>
                 </tr>
              </thead>
              <tbody>
-                <tr class="table-text">
+                <tr class="prices-table__text">
                    <td>Стандарт</td>
                    <td>1</td>
                    <td>30000$</td>
                 </tr>
-                <tr class="table-text">
+                <tr class="prices-table__text">
                    <td>Комфорт</td>
                    <td>2</td>
                    <td>40000$</td>
                 </tr>
-                <tr class="table-text">
+                <tr class="prices-table__text">
                    <td>Люкс</td>
                    <td>3</td>
                    <td>50000$</td>
                 </tr>
-                <tr class="table-text">
+                <tr class="prices-table__text">
                    <td>Супер Люкс</td>
                    <td>4</td>
                    <td>60000$</td>
                 </tr>
              </tbody>
              <tfoot>
-                <tr class="table-title">
+                <tr class="prices-table__title">
                    <td>Разом</td>
                    <td>10</td>
                    <td>180000$</td>

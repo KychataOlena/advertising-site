@@ -1,0 +1,16 @@
+.header-section{
+   position: fixed;
+   top: 0;
+   left:0;
+   width: 100%;
+   background-color: var(--background-color);
+   padding: 24px 0; 
+   z-index: 10;
+  
+}
+.header-section__inner{
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
