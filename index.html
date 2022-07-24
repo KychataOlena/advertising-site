@@ -28,7 +28,7 @@ rel="stylesheet">
                Каталог квартир</a>
                <div class="sub-menu">
                   <ul class="sub-menu__list">
-                     <li><a href=""class="sub-menu__item link">Стандарт</a></li>
+                     <li><a href="#apartment-section"class="sub-menu__item link">Стандарт</a></li>
                      <li><a href=""class="sub-menu__item link">Комфорт</a></li>
                      <li><a href=""class="sub-menu__item link">Люкс</a></li>
                      <li><a href="" class="sub-menu__item link">Супер Люкс</a></li>
@@ -51,7 +51,7 @@ rel="stylesheet">
       <section class="hero section">
          <div class="container">
             <h1 class="main-title">Житловий комплекс в історичному центрі</h1>
-            <a href="#feauter section" class="hero__mouse">
+            <a href="#features section" class="hero__mouse">
                <svg aria-label="Перехід на іншу сторінку" width="40" height="40" class="hero__icon">
                   <use href="./img/symbol-sprite.svg#icon-mouse" >
                   </use>
@@ -113,7 +113,7 @@ rel="stylesheet">
       </section>
 
       <!-- Apartments -->
-      <section class="apartment-section section">
+      <section id="apartment-section" class="apartment-section section">
          <div class="container">
             <h2 class="title">Наші квартири</h2>
             <ul class="apartment-section__list">
@@ -225,7 +225,8 @@ rel="stylesheet">
       <section class=" proposition section">
          <div class="container">
             <h2 class="title">Хочете подивитися?</h2>
-            <p  class="proposition__text">
+            <div class="proposition__inner">
+               <p  class="proposition__text">
                Житловий комплекс в історичному центрі міста HouseVOP завершив будівництво
                та здав об’єкт в експлаутацію <time datetime="2021-03-11">11 березня 2021 року</time>. Якщо ви маєте бажання подивитися
                квартиру,
@@ -234,15 +235,28 @@ rel="stylesheet">
                Якщо у когось є ідея - завжди велкам!
 
             </p>
-            <form>
-              
-               <button type="button" data-modal-open class="button-primery">Подивитись район</button>
+            <form class="proposition__form">
+               <div class="form-field proposition__field--bottom">
+               <label class="form-field__label" for="user-name">Введіть ім’я *</label>
+               <input class="form-field__input" type="text" id="user-name" name="user-name" placeholder="Іван">
+               </div>
+                <div class="form-field proposition__field--bottom">
+               <label class="form-field__label" for="user-mail">Введіть e-mail *</label>
+               <input class="form-field__input" type="email" id="user-mail" name="user-mail" placeholder="example@mail.com">
+               </div>
+               <div class="form-field proposition__field--bottom">
+               <label class="form-field__label"  for="user-phone">Введіть телефон *</label>
+               <input class="form-field__input" type="tel" id="user-phone" name="user-phone" placeholder="099 122 22 21">
+               </div>
+         
+               <button type="button" data-modal-open class="proposition__field--bottom proposition__button button-primery">Подивитись район</button>
                
             </form>
             
-          
+            </div>
             
-          </div>
+         
+         </div>
         
       </section>
  
@@ -280,66 +294,78 @@ rel="stylesheet">
       <section class="question section"> 
          <div class="container">
          <h2 class="title">Залишились питання?</h2>
+         <div class="question__inner">
+            
          <p class="question__text">*Ми нікому не передаємо ваші дані.
             І не зберігаємо ваш номер у базу.</p>
-          <form>
+            <form class="question__form">
+            <div class="question__form-field form-field">
+              
+               <input class="question__input form-field__input" type="text" id="user-name" name="user-name" placeholder="Ваше ім’я">
+            </div>
+            <div class="question__form-field form-field">
+          
+               <input class="question__input form-field__input" type="text" id="user-name" name="user-name" placeholder="Ваш телефон">
+            </div>
+           <button type="submit" data-modal-open class="button-primery proposition__button">Подивитись район</button>
+         </form>
 
-          </form>
+         </div>
       </div>
       </section>
    </main>
 
-   <footer class="section-footer">
+   <footer class="footer-section">
       <div class="container footer">
-         <div class="footer-info">
+         <div class="footer__info">
             <a href="./index.html">
                <img src="./img/first-screen__logo.svg" width="165" alt="лого компанії Хаусвоп"></a>
-              <p class="text-footer">© 2022 Всі права захищені. HouseVOP</p>   
+              <p class="footer__text">© 2022 Всі права захищені. HouseVOP</p>   
          </div>
         
             <nav>
-               <ul class="footer-list ul">
-                  <li><a class="site-nav-link"href="">Район</a></li>
-                  <li><a class="site-nav-link" href="">Про комплекс</a></li>
-                  <li><a class="site-nav-link" href="">Каталог квартир</a></li>
-                  <li><a class="site-nav-link"href="">Іпотека</a></li>
-                  <li><a class="site-nav-link"href="">Контакти</a></li>
+               <ul class="footer__list">
+                  <li><a class="link"href="">Район</a></li>
+                  <li><a class="link" href="">Про комплекс</a></li>
+                  <li><a class="link" href="">Каталог квартир</a></li>
+                  <li><a class="link"href="">Іпотека</a></li>
+                  <li><a class="link"href="">Контакти</a></li>
                </ul>
             </nav>
             <address>
-               <ul class="footer-list ul">
-                  <li class="">Адреса:<a class="site-nav-link" href="">вул. Садова 10-15</a></li>
-                  <li class="">Телефон:<a class="site-nav-link" href="tel:+38(099)1234567" >+38 (099) 123-45-67</a></li>
-                  <li class="">Відділ продажу:<time class="site-nav-link"datetime="10:00">10:00</time>-<time class="site-nav-link"datetime="20:00">20:00</time></li>
-                  <li class="">E-mail:<a class="site-nav-link" href="mailto:vip@housevip.ru" >vip@housevip.ru</a></li>
+               <ul class="footer__list">
+                  <li class="">Адреса:<a class="link" href="">вул. Садова 10-15</a></li>
+                  <li class="">Телефон:<a class="link" href="tel:+38(099)1234567" >+38 (099) 123-45-67</a></li>
+                  <li class="">Відділ продажу:<time class="link"datetime="10:00">10:00</time>-<time class="link"datetime="20:00">20:00</time></li>
+                  <li class="">E-mail:<a class="link" href="mailto:vip@housevip.ru" >vip@housevip.ru</a></li>
    
                </ul>
 
-               <ul class="footer-list-socials ul">
-                  <li class="footer-list-icon">
-                     <a href="" class="feauter-link">
-                     <svg class="feauter-link-svg" width="24" height="24" aria-label="Перехід за посиланням на Ютюб">
+               <ul class="footer__list-socials">
+                  <li class="footer__list-icon">
+                     <a href="" class="footer__link">
+                     <svg class="footer__icon" width="24" height="24" aria-label="Перехід за посиланням на Ютюб">
                         <use href="./img/symbol-sprite.svg#icon-YouTube">
                         </use>
                      </svg>
                   </a></li>
                   <li class="footer-list-icon">
-                     <a href="" class="feauter-link">
-                     <svg class="feauter-link-svg" width="24" height="24" aria-label="Перехід за посиланням на інстаграм">
+                     <a href="" class="footer__link">
+                     <svg class="footer__icon" width="24" height="24" aria-label="Перехід за посиланням на інстаграм">
                         <use href="./img/symbol-sprite.svg#icon-Instagram">
                         </use>
                      </svg>
                   </a></li>
                   <li class="footer-list-icon">
-                     <a href="" class="feauter-link"> 
-                     <svg class="feauter-link-svg" width="24" height="24" aria-label="Перехід за посиланням на фейсбук">
+                     <a href="" class="footer__link"> 
+                     <svg class="footer__icon" width="24" height="24" aria-label="Перехід за посиланням на фейсбук">
                         <use href="./img/symbol-sprite.svg#icon-FB">
                         </use>
                      </svg>
                   </a></li>
                   <li class="footer-list-icon">
-                     <a href="" class="feauter-link">
-                     <svg class="feauter-link-svg" width="24" height="24" aria-label="Перехід за посиланням на VK">
+                     <a href="" class="footer__link">
+                     <svg class="footer__icon" width="24" height="24" aria-label="Перехід за посиланням на VK">
                         <use href="./img/symbol-sprite.svg#icon-VK">
                         </use>
                      </svg>
@@ -354,61 +380,61 @@ rel="stylesheet">
    <!-- Modal -->
  <div class="backdrop is-hidden" data-modal>
    <div class="modal">
-      <button class="modal-close-button" type="button" data-modal-close>X</button>
-      <div class="modal-inner">
-         <h2 class="title title-form">Хочете подивитися?</h2>
+      <button class="modal__close-button" type="button" data-modal-close>X</button>
+      <div class="modal__inner">
+         <h2 class="title modal__title">Хочете подивитися?</h2>
          <form class="form" name="main-form" novalidate autocomplete="on">
-            <h3 class="title-info">Контактна інформація</h3>
-            <div class="form-field">
-               <label class="form-label" for="user-name">Введіть ім’я *</label>
-               <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Іван">
+            <h3 class="modal__group-title">Контактна інформація</h3>
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label" for="user-name">Введіть ім’я *</label>
+               <input class="form-field__input" type="text" id="user-name" name="user-name" placeholder="Іван">
             </div>
-            <div class="form-field">
-               <label class="form-label" for="user-mail">Введіть e-mail *</label>
-               <input class="form-input" type="email" id="user-mail" name="user-mail" placeholder="example@mail.com">
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label" for="user-mail">Введіть e-mail *</label>
+               <input class="form-field__input" type="email" id="user-mail" name="user-mail" placeholder="example@mail.com">
             </div>
-            <div class="form-field">
-               <label class="form-label"  for="user-phone">Введіть телефон *</label>
-               <input class="form-input" type="tel" id="user-phone" name="user-phone" placeholder="099 122 22 21">
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label"  for="user-phone">Введіть телефон *</label>
+               <input class="form-field__input" type="tel" id="user-phone" name="user-phone" placeholder="099 122 22 21">
             </div>
-            <div class="form-field">
-               <label class="form-label" for="user-password">Введіть пароль *</label>
-               <input class="form-input" type="password" id="user-password" name="user-password" placeholder="*****">
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label" for="user-password">Введіть пароль *</label>
+               <input class="form-field__input" type="password" id="user-password" name="user-password" placeholder="*****">
             </div>
-            <h3 class="title-info">Інформація про квартиру</h3>
-            <div class="form-field">
-               <label class="form-label" for="flat-type">Оберіть тип квартири *</label>
-               <select class="form-input" name="flat-type" id="flat-type">
+            <h3 class="modal__group-title">Інформація про квартиру</h3>
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label" for="flat-type">Оберіть тип квартири *</label>
+               <select class="form-field__input" name="flat-type" id="flat-type">
                   <option value="1">Стандарт — 1 поверх</option>
                   <option value="2">Комфорт — 2 поверхи</option>
                   <option value="3" selected>Люкс — 3 поверхи</option>
                   <option value="4">Супер Люкс — 4 поверхи</option>
                </select>
             </div>
-            <div class="form-field">
-               <label class="form-label" for="flat-location">Наскільки вам зручне містознаходження?</label>
-               <input class="form-range" type="range" id="flat-location" name="flat-location" min="1" max="10" value="9">
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label" for="flat-location">Наскільки вам зручне містознаходження?</label>
+               <input class="form-field__range" type="range" id="flat-location" name="flat-location" min="1" max="10" value="9">
             </div>
-            <div class="form-field">
-               <label class="form-label" for="flat-term">На який термін плануєте купувати житло?
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label" for="flat-term">На який термін плануєте купувати житло?
                   (від 1 до 100 років)</label>
-               <input class="form-input" type="number" id="flat-term" name="flat-term" min="1" max="10" value="9">
+               <input class="form-field__input" type="number" id="flat-term" name="flat-term" min="1" max="10" value="9">
             </div>
-            <div class="form-field">
-               <label class="form-label" for="date-time">Оберіть дату і час перегляду квартири *</label>
-               <input class="form-input" type="datetime-local" id="date-time" name="date-time">
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label" for="date-time">Оберіть дату і час перегляду квартири *</label>
+               <input class="form-field__input" type="datetime-local" id="date-time" name="date-time">
             </div>
-            <h3 class="title-info">Додаткова інформація</h3>
-            <div class="form-field">
-               <label class="form-label" for="form-comment">Введіть коментар </label>
-               <textarea class="form-input form-textarea" name="form-comment" id="form-comment"rows="10" placeholder="Моє побажання..."></textarea>
+            <h3 class="modal__group-title">Додаткова інформація</h3>
+            <div class="form-field modal__field--bottom">
+               <label class="form-field__label" for="form-comment">Введіть коментар </label>
+               <textarea class="form-field__input form-field__textarea" name="form-comment" id="form-comment"rows="10" placeholder="Моє побажання..."></textarea>
             </div>
-            <div class="form-field">
+            <div class="form-field modal__field--bottom">
                <input class="" type="checkbox" id="checkbox-form" name="checkbox-form">
                <label class="" for="checkbox-form">Я згоден з правами використання введених особистих даних.</label>
             </div>
-            <button class="form-button form-button-checkbox" type="submit">Подивитись район</button>
-            <p class="text-form"><i>Ми нікому не передаємо ваші дані. І не зберігаємо ваш номер у базу.</i></p>
+            <button class="form-button" type="submit">Подивитись район</button>
+            <p class="form-field__text"><i>Ми нікому не передаємо ваші дані. І не зберігаємо ваш номер у базу.</i></p>
          </form>
       </div>
    </div>

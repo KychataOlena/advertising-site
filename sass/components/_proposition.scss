@@ -8,12 +8,29 @@
    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),url(../img/backgraund-sc-photo.jpg);
 
    &__text{
-    display: block;
-    width: 28.75rem;
+    margin-right: 4rem;
+    max-width: 28.75rem;
     height: 10.68rem;
    font-size: 1rem;
    line-height: 1.5; 
 }
+    &__inner{
+        display: flex;
+    }
+
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    &__field--bottom{
+        flex-basis: calc(50% - 0.75rem);
+    }
+
+    &__button {
+        align-self: flex-end;
+    }
 
 }
 
