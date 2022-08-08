@@ -2,6 +2,7 @@
 .main-title{
    margin: 0 auto 50px;
    text-align: center;
+    max-width: 34.75rem;
    font-size: 1.5rem;
    font-family: 'Playfair Display', serif;
 
@@ -10,8 +11,8 @@
      @media screen and (min-width:480px) {
       text-align: center;
       margin: 0 auto 100px;
-        max-width: 34.75rem;
-         font-size: 3rem;
+      max-width: 34.75rem;
+      font-size: 3rem;
    }
     
 }
