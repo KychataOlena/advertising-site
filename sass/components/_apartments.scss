@@ -12,8 +12,13 @@
 
     &__item-wrap {
    position: relative;
-   flex-basis: 50%;
+   flex-basis: 100%;
    padding: 16px;
+
+   @media screen and (min-width:480px) {
+
+    flex-basis: 50%;
+   }
 
 }
 
@@ -64,13 +69,20 @@
 
     &__text{
    position: absolute;
-   bottom: 40px;
-   left: 48px;
+   bottom: 15px;
+   left: 15px;
    display: block;
-   font-size: 1.5rem;
+   font-size: 1rem;
    line-height: 1.16; 
    margin-top: 1.5rem;
    margin-bottom: 0;
+
+     @media screen and (min-width:768px) {
+        bottom: 40px;
+        left: 48px;
+        font-size: 1.5rem;
+
+   }
 }
 
 }

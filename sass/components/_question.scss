@@ -4,23 +4,45 @@
     font-size: 13px;
     line-height: 1.23;
     color: var(--text-quesion-color);
-    max-width: 250px;
-    margin-right: 30px;
     text-align: center;
+    margin-bottom: 20px;
+
+ @media screen and (min-width: 1200px) {
+        max-width: 250px;
+        margin-right: 30px;
+        margin-bottom: 0;
+     }
     }
 
 
     &__inner{
+
+   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    
+     }
 }
     &__form{
-    flex-wrap: nowrap;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+
+     @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        flex-direction: row;
+     }
+
+ 
 }
 
     &__form-field{
-    margin-right: 30px;
+        margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+     margin-right: 30px;
+      margin-bottom: 0;
+     }
+    
 }
 
     &__input::placeholder{
@@ -29,4 +51,11 @@
     text-align: center;
     color: var(--placeholder-color);
     }
+}
+
+.question__form-button{
+    width: 100%;
+    @media screen and (min-width: 768px) {
+    width: 255px;
+     }
 }

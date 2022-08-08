@@ -18,14 +18,13 @@ rel="stylesheet">
 <header class="header-section">
    <div class="container header-section__inner">
       <a href="./index.html">
-         <img src="./img/first-screen__logo.svg"width="165" alt="лого компанії Хаусвоп">
+         <img class="header-section__logo" src="./img/first-screen__logo.svg"width="165" alt="лого компанії Хаусвоп">
       </a>
-      <nav class="menu">
+      <nav class="header-section__desktop--menu menu">
          <ul class="menu__list">
             <li class="menu__item"><a href="#" class="link">Про комплекс</a></li>
             <li class="menu__item"><a href="#" class="link">Район</a></li>
-            <li class="menu__item"><a href="#" class="link">
-               Каталог квартир</a>
+            <li class="menu__item menu__item--icon"><a href="#" class="link">Каталог квартир</a>
                <div class="sub-menu">
                   <ul class="sub-menu__list">
                      <li><a href="#apartment-section"class="sub-menu__item link">Стандарт</a></li>
@@ -40,6 +39,26 @@ rel="stylesheet">
             <li class="menu__item"><a href="#" class="link">Контакти</a></li>
          </ul>
       </nav>
+       <button class="burger-button" type="button" data-mobile-menu-open>
+            <svg width="40" height="40">
+               <use href="./img/symbol-sprite.svg#icon-menu"></use>
+            </svg>
+         </button>
+      <nav class="header-section__mobile--menu mobile-menu is-hidden" data-mobile-menu>
+          <button class="burger-button burger-button__close" type="button" data-mobile-menu-close>
+            <svg width="40" height="40">
+               <use href="./img/symbol-sprite.svg#icon-close_menu"></use>
+            </svg>
+         </button>
+         <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="#" class="link">Про комплекс</a></li>
+            <li class="mobile-menu__item"><a href="#" class="link">Район</a></li>
+            <li class="mobile-menu__item"><a href="#" class="link">Каталог квартир</a></li>
+            <li class="mobile-menu__item"><a href="#" class="link">Іпотека</a></li>
+             <li class="mobile-menu__item"><a href="#" class="link">Контакти</a></li>
+         </ul>
+      </nav>
+      
 
    </div>
 </header>
@@ -82,30 +101,31 @@ rel="stylesheet">
          <div class="container">
             <h2 class="title visually-hidden">Feature section</h2>
             <ul class="features__menu">
-               <li class="features__item">
+               <li class="features__item features__item--end">
                   <svg class="features__icon" width="80" height="80" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-bench">
                      </use>
                   </svg>
                   <p class="features__text">Поряд історичні парки та сквери</p></li>
-               <li class="features__item">
+               <li class="features__item features__item--end">
                   <svg class="features__icon" width="80" height="80" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-building">
                      </use>
                   </svg>
                   <p class="features__text">Повністю облаштований</p></li>
-               <li class="features__item">
+               <li class="features__item features__item--end">
                   <svg class="features__icon" width="80" height="80" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-fountain">
                      </use>
                   </svg>
                   <p class="features__text">10 фонтанів на території</p></li>
-               <li class="features__item">
+               <li class="features__item features__item--end">
                   <svg class="features__icon" width="80" height="80" aria-hidden="true">
                      <use href="./img/symbol-sprite.svg#icon-bicycle">
                      </use>
                   </svg>
-                  <p class="features__text">6 км велодоріжок</p></li>
+                  <p class="features__text">6 км велодоріжок</p>
+               </li>
             </ul>
 
          </div>
@@ -263,14 +283,20 @@ rel="stylesheet">
 
       <!-- Video -->
       <section>
+          <h2 class="section__title title visually-hidden">Відео огляд житлового комплексу</h2>
         
-         <div class="container video-image">
-            <svg class="play-svg" width="100" height="100" aria-hidden="true">
+         <div class="video-section container">
+             <video class="video-section-content" controls loop muted>
+                        <source src="./assets/videos/test_video.webm" type="video/webm">
+                        <source src="./assets/videos/test_video.mp4" type="video/mp4">
+                        Нажаль, це відео не підтримується вашим браузером :(
+                    </video>
+            <!-- <svg class="play-svg" width="100" height="100" aria-hidden="true">
                <use href="./img/symbol-sprite.svg#play-button">
                </use>
             </svg>
           
-            <img src="./img/livingroom.jpg" alt="квартира" width="719">
+            <img src="./img/livingroom.jpg" alt="квартира" > -->
          </div>
       </section>
 
@@ -278,8 +304,8 @@ rel="stylesheet">
       <section class="section">
          <div class="container">
             <h2 class="title">Район на мапі</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.2156557701373!2d-47.89551542174301!3d-15.792578768937616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2fe53c69c215%3A0xd7704b3f4eccf40d!2sMeli%C3%A1%20Brasil%2021!5e0!3m2!1sru!2sua!4v1654892061219!5m2!1sru!2sua"
-            width="1110"
+            <iframe class="maps-section" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.2156557701373!2d-47.89551542174301!3d-15.792578768937616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2fe53c69c215%3A0xd7704b3f4eccf40d!2sMeli%C3%A1%20Brasil%2021!5e0!3m2!1sru!2sua!4v1654892061219!5m2!1sru!2sua"
+            max-width="1110"
             height="358"
             style="border:0;"
             loading="lazy" 
@@ -294,8 +320,7 @@ rel="stylesheet">
       <section class="question section"> 
          <div class="container">
          <h2 class="title">Залишились питання?</h2>
-         <div class="question__inner">
-            
+         <div class="question__inner">        
          <p class="question__text">*Ми нікому не передаємо ваші дані.
             І не зберігаємо ваш номер у базу.</p>
             <form class="question__form">
@@ -307,7 +332,7 @@ rel="stylesheet">
           
                <input class="question__input form-field__input" type="text" id="user-name" name="user-name" placeholder="Ваш телефон">
             </div>
-           <button type="submit" data-modal-open class="button-primery proposition__button">Подивитись район</button>
+           <button type="submit" data-modal-open class="button-primery question__form-button">Подивитись район</button>
          </form>
 
          </div>
@@ -325,11 +350,11 @@ rel="stylesheet">
         
             <nav>
                <ul class="footer__list">
-                  <li><a class="link"href="">Район</a></li>
-                  <li><a class="link" href="">Про комплекс</a></li>
-                  <li><a class="link" href="">Каталог квартир</a></li>
-                  <li><a class="link"href="">Іпотека</a></li>
-                  <li><a class="link"href="">Контакти</a></li>
+                  <li><a class="link footer-text"href="">Район</a></li>
+                  <li><a class="link footer-text" href="">Про комплекс</a></li>
+                  <li><a class="link footer-text" href="">Каталог квартир</a></li>
+                  <li><a class="link footer-text"href="">Іпотека</a></li>
+                  <li><a class="link footer-text"href="">Контакти</a></li>
                </ul>
             </nav>
             <address>
@@ -441,6 +466,7 @@ rel="stylesheet">
 
    
  </div>
+  <script src="./js/menu.js"></script>
  <script src="./js/modal.js"></script>
 </body>
 </html>

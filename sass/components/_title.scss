@@ -1,21 +1,30 @@
 
 .main-title{
-   max-width: 34.75rem;
-   text-align: center;
-   margin: 0 auto 100px;
- 
-
+   margin: 0 auto 50px;
+   font-size: 1.5rem;
    font-family: 'Playfair Display', serif;
-   font-size: 3rem;
+
    color: var(--title-color);
+
+     @media screen and (min-width:480px) {
+      text-align: center;
+      margin: 0 auto 100px;
+        max-width: 34.75rem;
+         font-size: 3rem;
+   }
     
 }
 .title{
    color: var(--title-color);
    font-family: 'Playfair Display', serif;
-   font-size: 36px;
+   font-size: 24px;
    line-height: 1.33;
    margin-top: 0px;
-   margin-bottom: 40px;
+   margin-bottom: 20px;
+
+ @media screen and (min-width:480px) {
+  font-size: 36px;
+  margin-bottom: 40px;
+   }
 }
 
